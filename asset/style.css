@@ -1,0 +1,204 @@
+
+:root {
+    --couleur-jaune-tete: rgb(254, 237, 62);
+    --couleur-jaune-corps: rgb(253, 240, 110);
+    --couleur-gris-fonce: rgb(75, 74, 67);
+    --couleur-peau: rgb(246, 203, 183);
+    --couleur-bleu-vetements: rgb(88, 128, 160);
+    --couleur-blanc-griffes: rgb(240, 240, 240);
+    --couleur-marron-ceinture: rgb(191, 95, 59);
+    --couleur-gris-fonce-transparent: rgba(75, 74, 67, 0.85);
+    --couleur-bleu-vetements-transparent: rgba(88, 128, 160, 0.85);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.tete{
+    width: 200px;
+    height: 200px;
+    background-color: var(--couleur-jaune-tete);
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; 
+}
+.triangle1{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 72px 229px 72px;
+    border-color: transparent transparent var(--couleur-gris-fonce-transparent) transparent;
+    transform: rotate(319deg);
+    position: absolute;
+    top: -15px;
+    left: 38%;
+
+}
+.triangle2{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 72px 229px 72px;
+    border-color: transparent transparent var(--couleur-gris-fonce-transparent) transparent;
+    transform: rotate(42deg);
+    position: absolute;
+    top: -12px;
+    left: 53%;
+}
+.bouche{
+    height: 45px;
+    width: 48px;
+    background: var(--couleur-peau);
+    position: absolute;
+    top: 184px;
+    left: 714px;
+    border-radius: 0 0 50px 50px;
+}
+.corp{
+    width: 300px;
+    height: 400px;
+    background-color: var(--couleur-jaune-corps);
+    position: absolute;
+    top: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.epaule-gauche{
+    border-style: solid;
+    border-width: 0 152px 114px 0;
+    border-color: transparent var(--couleur-bleu-vetements-transparent) transparent transparent;
+    position: absolute;
+    top: 245px;
+    left: 433px;
+    z-index: 1;
+}
+.epaule-droit{
+    border-style: solid;
+    border-width: 0 0 114px 152px;
+    border-color: transparent transparent var(--couleur-bleu-vetements-transparent) transparent;
+    position: absolute;
+    top: 245px;
+    left: 884px;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+.bras-gauche{
+    width: 100px;
+    height: 280px;
+    background-color: var(--couleur-peau);
+    position: absolute;
+    top: 270px;
+    left: 485px;
+}
+.bras-droit{
+    width: 100px;
+    height: 280px;
+    background-color: var(--couleur-peau);
+    position: absolute;
+    top: 270px;
+    left: 884px;
+}
+.main-gauche{
+    width: 100px;
+    height: 50px;
+    background-color: var(--couleur-bleu-vetements-transparent);
+    position: absolute;
+    top: 534px;
+    left: 485px;
+}
+.main-droite{
+    width: 100px;
+    height: 50px;
+    background-color: var(--couleur-bleu-vetements-transparent);
+    position: absolute;
+    top: 534px;
+    left: 884px;
+}
+.crochet1{
+    width: 10px;
+    height: 65px;
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 497px;
+}
+.crochet2{
+    width: 10px;
+    height: 65px;
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 529px;
+}
+.crochet3{
+    width: 10px;
+    height: 65px;
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 560px;
+}
+.crochet4{
+    width: 10px;
+    height: 65px;
+
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 897px;
+}
+.crochet5{
+    width: 10px;
+    height: 65px;
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 928px;
+}
+.crochet6{
+    width: 10px;
+    height: 65px;
+    background-color: var(--couleur-blanc-griffes);
+    position: absolute;
+    top: 564px;
+    left: 959px;
+}
+.ceinture{
+    width: 300px;
+    height: 100px;
+    background: var(--couleur-marron-ceinture);
+    position: absolute;
+    top: 624px;
+    left: 586px;
+}
+.slip{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 136px 147px 0 147px;
+    border-color: var(--couleur-bleu-vetements-transparent) transparent transparent transparent;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 724px;
+    left: 588px;
+    z-index: 1
+}
+.jambe-gauche{
+    width: 131px;
+    height: 280px;
+    background-color: var(--couleur-jaune-tete);
+    position: absolute;
+    top: 724px;
+    left: 594px;
+}
+.jambe-droite{
+    width: 131px;
+    height: 280px;
+    background-color: var(--couleur-jaune-tete);
+    position: absolute;
+    top: 724px;
+    left: 742px;
+}
